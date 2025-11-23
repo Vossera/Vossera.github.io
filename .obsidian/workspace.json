@@ -66,10 +66,15 @@
             "id": "47ebea6f76b8e21f",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "_posts/2025-11-23-构建n8n工作流.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "2025-11-23-构建n8n工作流"
             }
           }
         ],
@@ -249,6 +254,16 @@
   },
   "active": "47ebea6f76b8e21f",
   "lastOpenFiles": [
+    "assets/2025-11-23-构建n8n工作流/file-20251123104854897.png",
+    "assets/2025-11-23-构建n8n工作流",
+    "assets/2025-11-23-构建n8n工作流/file-20251123104615400.png",
+    "assets/2025-11-23-配置n8n",
+    "assets/2025-11-23-构建n8n工作流/file-20251123104615402.png",
+    "assets/Untitled",
+    "_posts/assets/Untitled/file-20251123104114576.png",
+    "_posts/assets/Untitled",
+    "_posts/assets",
+    "_posts/2025-11-23-构建n8n工作流.md",
     "202511/assets/2025-11-23-配置blog/file-20251123100550936.png",
     "202511/assets/2025-11-23-配置blog/file-20251123094206619.png",
     "202511/assets/2025-11-23-配置blog",
@@ -275,21 +290,12 @@
     "有关vMoc/assets/2025-11-22-听闻岁的会议",
     "有关vMoc/assets",
     "202511/assets/2025-11-21-高性能网络架构师笔记学习/file-20251121163456388.png",
-    "202511/assets/2025-11-21-高性能网络架构师笔记学习/file-20251121113742273.png",
     "202511/assets/2025-11-21-高性能网络架构师笔记学习",
     "模版.md",
     "有关vMoc",
     "有关Helix/1119总结Helix 总结 backup.md",
     "有关Helix/1119总结Helix 总结.md",
     "有关Helix/1119总结Helix 需要确认版.md",
-    "有关Helix/assets/1119总结Helix 总结/file-20251120175207012.png",
-    "有关Helix/assets/1119总结Helix 总结/file-20251120175207013.png",
-    "有关Helix/assets/1119总结Helix 总结/file-20251120175207014.png",
-    "有关Helix/assets/1119总结Helix 总结",
-    "有关Helix/assets",
-    "有关Helix",
-    "assets/1119总结Helix 总结",
-    "assets/1119总结",
     "配置.md",
     "202511/test.md",
     "2025-11-18.md"
