@@ -59,7 +59,7 @@ webmaster_verifications:
 # Web Analytics Settings
 analytics:
   google:
-    id: # fill in your Google Analytics ID
+    id: G-5DT5WD6R86
   goatcounter:
     id: # fill in your GoatCounter ID
   umami:
@@ -95,7 +95,8 @@ theme_mode: # [light | dark]
 # will be added to all media resources (site avatar, posts' images, audio and video files) paths starting with '/'
 #
 # e.g. 'https://cdn.com'
-cdn:
+cdn: https://cdn.jsdelivr.net/gh/Vossera/Vossera.github.io/
+
 
 # the avatar on sidebar, support local or CORS resources
 avatar: assets/avatar.png
