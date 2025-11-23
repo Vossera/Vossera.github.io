@@ -66,15 +66,12 @@
             "id": "47ebea6f76b8e21f",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "_posts/2025-11-23-构建n8n工作流.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
+                "file": "assets/avatar.png"
               },
-              "icon": "lucide-file",
-              "title": "2025-11-23-构建n8n工作流"
+              "icon": "lucide-image",
+              "title": "avatar"
             }
           }
         ],
@@ -254,6 +251,9 @@
   },
   "active": "47ebea6f76b8e21f",
   "lastOpenFiles": [
+    "_posts/2025-11-23-构建n8n工作流.md",
+    "assets/2025-11-23-构建n8n工作流/file-20251123111959873.png",
+    "assets/2025-11-23-构建n8n工作流/file-20251123111648912.png",
     "assets/2025-11-23-构建n8n工作流/file-20251123104854897.png",
     "assets/2025-11-23-构建n8n工作流",
     "assets/2025-11-23-构建n8n工作流/file-20251123104615400.png",
@@ -263,7 +263,6 @@
     "_posts/assets/Untitled/file-20251123104114576.png",
     "_posts/assets/Untitled",
     "_posts/assets",
-    "_posts/2025-11-23-构建n8n工作流.md",
     "202511/assets/2025-11-23-配置blog/file-20251123100550936.png",
     "202511/assets/2025-11-23-配置blog/file-20251123094206619.png",
     "202511/assets/2025-11-23-配置blog",
@@ -285,11 +284,8 @@
     "202511/2025-11-16-3DGS.md",
     "有关vMoc/assets/2025-11-22-听闻岁的会议/file-20251122163336797.png",
     "有关vMoc/assets/2025-11-22-听闻岁的会议/file-20251122162118030.png",
-    "有关vMoc/assets/2025-11-22-听闻岁的会议/file-20251122161239206.png",
-    "有关vMoc/assets/2025-11-22-听闻岁的会议/file-20251122161102286.png",
     "有关vMoc/assets/2025-11-22-听闻岁的会议",
     "有关vMoc/assets",
-    "202511/assets/2025-11-21-高性能网络架构师笔记学习/file-20251121163456388.png",
     "202511/assets/2025-11-21-高性能网络架构师笔记学习",
     "模版.md",
     "有关vMoc",
