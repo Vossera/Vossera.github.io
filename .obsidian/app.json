@@ -1,1 +1,15 @@
-{}
+{
+  "newFileLocation": "current",
+  "attachmentFolderPath": "attachments",
+  "defaultViewMode": "source",
+  "useMarkdownLinks": true,
+  "newLinkFormat": "relative",
+  "promptDelete": false,
+  "propertiesInDocument": "visible",
+  "pdfExportSettings": {
+    "pageSize": "Letter",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  }
+}

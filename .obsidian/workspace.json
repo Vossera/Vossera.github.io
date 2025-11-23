@@ -1,14 +1,69 @@
 {
   "main": {
-    "id": "dfccb3bb004a943b",
+    "id": "1a38671445c7b1a7",
     "type": "split",
     "children": [
       {
-        "id": "247dcebcaef3879a",
+        "id": "f5ebda2ad9a1cfd4",
         "type": "tabs",
         "children": [
           {
-            "id": "710b15ac65f0015e",
+            "id": "c4fccade9842af71",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "f836e46a917cd305",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "有关Helix/1119总结Helix 总结.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "1119总结Helix 总结"
+            }
+          },
+          {
+            "id": "408d9c44173ae2db",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "有关vMoc/2025-11-18-vSwitch Insight and Summary.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "2025-11-18-vSwitch Insight and Summary"
+            }
+          },
+          {
+            "id": "f5c0020692416ca8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "202511/2025-11-22-VFP.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "2025-11-22-VFP"
+            }
+          },
+          {
+            "id": "47ebea6f76b8e21f",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -17,21 +72,22 @@
               "title": "New tab"
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "52bb5c38bba2053e",
+    "id": "5956110f03a50d7e",
     "type": "split",
     "children": [
       {
-        "id": "b9d6d2c752c71ba9",
+        "id": "ccae90bfd3c9f7d5",
         "type": "tabs",
         "children": [
           {
-            "id": "39c8765bab223eb5",
+            "id": "14ed203279c7065c",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -44,7 +100,7 @@
             }
           },
           {
-            "id": "876402cc4d2e84cd",
+            "id": "172ebdddb5bd87d8",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -61,7 +117,7 @@
             }
           },
           {
-            "id": "2212c6fe58d2b92c",
+            "id": "fc20af927ffe3c3c",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -74,23 +130,48 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
-    "id": "80f22c695604f772",
+    "id": "7400426a3acf37a7",
     "type": "split",
     "children": [
       {
-        "id": "8218eb434e74dd3f",
+        "id": "8c50baf25b60860b",
         "type": "tabs",
         "children": [
           {
-            "id": "fb81546fd89a1c45",
+            "id": "777e7d0ec92fcaee",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "配置.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of 配置"
+            }
+          },
+          {
+            "id": "3c474efa3411785a",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          },
+          {
+            "id": "3944f5592fd95835",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2025-11-22-Test.md",
+                "file": "202511/2025-11-17-vSwitch Background.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,25 +181,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 2025-11-22-Test"
+              "title": "Backlinks for 2025-11-17-vSwitch Background"
             }
           },
           {
-            "id": "caa8a1407b1daff4",
+            "id": "caf28d2baf00a6f3",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2025-11-22-Test.md",
+                "file": "202511/2025-11-17-vSwitch Background.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 2025-11-22-Test"
+              "title": "Outgoing links from 2025-11-17-vSwitch Background"
             }
           },
           {
-            "id": "c99a58a0753502c1",
+            "id": "94ad130abdb6afc1",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -133,7 +214,7 @@
             }
           },
           {
-            "id": "90c7ffdd392470f0",
+            "id": "c082acaddb4fab28",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -145,42 +226,72 @@
               "icon": "lucide-archive",
               "title": "All properties"
             }
-          },
-          {
-            "id": "4d4227b09d20f134",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "_posts/2025-11-22-Test.md",
-                "followCursor": false,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-list",
-              "title": "Outline of 2025-11-22-Test"
-            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 200,
     "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "bases:Create new base": false
+      "obsidian-git:Open Git source control": true,
+      "switcher:Open quick switcher": true,
+      "graph:Open graph view": true,
+      "canvas:Create new canvas": true,
+      "daily-notes:Open today's daily note": true,
+      "templates:Insert template": true,
+      "command-palette:Open command palette": true,
+      "bases:Create new base": true
     }
   },
-  "active": "710b15ac65f0015e",
+  "active": "47ebea6f76b8e21f",
   "lastOpenFiles": [
-    "_posts/2025-11-22-Test.md"
+    "202511/assets/2025-11-23-配置blog/file-20251123100550936.png",
+    "202511/assets/2025-11-23-配置blog/file-20251123094206619.png",
+    "202511/assets/2025-11-23-配置blog",
+    "202511/2025-11-22-VFP.md",
+    "202511/2025-11-23-配置blog.md",
+    "有关vMoc/读完六篇云网络架构Paper，我得到了什么？.md",
+    "有关vMoc/2025-11-22自己的总结.md",
+    "有关vMoc/云网络深海探险：从vSwitch到DPU的演进与未来.md",
+    "有关vMoc/2025-11-18-vSwitch Insight and Summary.md",
+    "有关vMoc/2025-11-22-EvolutionofCloud.md",
+    "有关vMoc/2025-11-22-VFP.md",
+    "有关vMoc/2025-11-22-听闻岁的会议.md",
+    "有关vMoc/2025-11-17-vSwitch Background.md",
+    "202511/2025-11-19-Proxy Tun.md",
+    "202511/2025-11-21-高性能网络架构师笔记学习.md",
+    "有关vMoc/2025-11-21-高性能网络架构师笔记学习.md",
+    "202511/2025-11-18-vSwitch Insight and Summary.md",
+    "202511/2025-11-17-vSwitch Background.md",
+    "202511/2025-11-16-3DGS.md",
+    "有关vMoc/assets/2025-11-22-听闻岁的会议/file-20251122163336797.png",
+    "有关vMoc/assets/2025-11-22-听闻岁的会议/file-20251122162118030.png",
+    "有关vMoc/assets/2025-11-22-听闻岁的会议/file-20251122161239206.png",
+    "有关vMoc/assets/2025-11-22-听闻岁的会议/file-20251122161102286.png",
+    "有关vMoc/assets/2025-11-22-听闻岁的会议",
+    "有关vMoc/assets",
+    "202511/assets/2025-11-21-高性能网络架构师笔记学习/file-20251121163456388.png",
+    "202511/assets/2025-11-21-高性能网络架构师笔记学习/file-20251121113742273.png",
+    "202511/assets/2025-11-21-高性能网络架构师笔记学习",
+    "模版.md",
+    "有关vMoc",
+    "有关Helix/1119总结Helix 总结 backup.md",
+    "有关Helix/1119总结Helix 总结.md",
+    "有关Helix/1119总结Helix 需要确认版.md",
+    "有关Helix/assets/1119总结Helix 总结/file-20251120175207012.png",
+    "有关Helix/assets/1119总结Helix 总结/file-20251120175207013.png",
+    "有关Helix/assets/1119总结Helix 总结/file-20251120175207014.png",
+    "有关Helix/assets/1119总结Helix 总结",
+    "有关Helix/assets",
+    "有关Helix",
+    "assets/1119总结Helix 总结",
+    "assets/1119总结",
+    "配置.md",
+    "202511/test.md",
+    "2025-11-18.md"
   ]
 }
