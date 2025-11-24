@@ -83,13 +83,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2025-11-24-ClaudeCode配API使用.md",
+                "file": "_posts/2025-11-23-配置blog.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "2025-11-24-ClaudeCode配API使用"
+              "title": "2025-11-23-配置blog"
             }
           }
         ],
@@ -269,6 +269,8 @@
   },
   "active": "37c6ea81c3894016",
   "lastOpenFiles": [
+    "_posts/2025-11-23-测试cdn.md",
+    "_posts/2025-11-24-ClaudeCode配API使用.md",
     "_site/posts/榨干Gemini/index.html",
     "_site/posts/榨干Gemini",
     "_site/posts/ClaudeCode配API使用/index.html",
@@ -288,16 +290,13 @@
     "_posts/2025-11-24-榨干Gemini.md",
     "_posts/2025-11-22-Test.md",
     "_posts/().md",
-    "_posts/2025-11-24-ClaudeCode配API使用.md",
     "_posts/2025-11-23-配置blog.md",
-    "_posts/2025-11-23-测试cdn.md",
     "_posts/2025-11-22-设计思考.md",
     "assets/avatar.png",
     "_posts/2025-11-23-构建n8n工作流.md",
     "assets/2025-11-23-构建n8n工作流/file-20251123111959873.png",
     "assets/2025-11-23-构建n8n工作流/file-20251123111648912.png",
     "assets/2025-11-23-构建n8n工作流",
-    "assets/2025-11-23-配置n8n",
     "202511/2025-11-22-VFP.md",
     "202511/2025-11-23-配置blog.md",
     "有关vMoc/读完六篇云网络架构Paper，我得到了什么？.md",
