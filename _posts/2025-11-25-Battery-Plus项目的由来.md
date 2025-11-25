@@ -25,11 +25,9 @@ tags:
 ## 我对源项目提的一个小PR
 ### 为什么要提
 如你所见，上面上我修改后的，下面是没修改的。
-```
 <div align="center">
   <img src="../assets/2025-11-25-Battery-Plus项目的由来/file-20251125112516403.png" alt="why to modify"/>
 </div>
-```
 ### 怎么修改的呢
 将文件上传到https://www.candyicons.com/free-tools/app-icon-assets-generator这个网站上。
 然后下载1024 * 1024的图片，就能给图片加上padding，让他看起来更小。
