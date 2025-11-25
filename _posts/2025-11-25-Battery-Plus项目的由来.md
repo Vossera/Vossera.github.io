@@ -6,6 +6,7 @@ categories:
 tags:
   - Battery-Plus
 ---
+项目链接：https://github.com/Vossera/battery-plus
 
 我最近给一个开源项目写了一个GUI增强版。但是由于原作者是极简主义者，不接受任何GUI的修改，以保持GUI是最小功能。所以我fork，修改了之后只提了一个小PR（关于dock里面图片大小的）。
 
