@@ -1,3 +1,11 @@
+---
+title: ClaudeCode配API使用
+date: 2025-11-24
+categories:
+  - 工作流优化
+tags:
+  - ClaudeCode
+---
 
 有一个项目是https://github.com/musistudio/claude-code-router， 下面简称ccr，这个开源项目主要是解决claude API太难搞的问题。
 
