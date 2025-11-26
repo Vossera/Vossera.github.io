@@ -81,15 +81,12 @@
             "id": "a59edff244de9323",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "_posts/2025-11-25-Battery-Plus项目的由来.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
+                "file": "assets/2025-11-24-ClaudeCode配API使用/file-20251124101944491.png"
               },
-              "icon": "lucide-file",
-              "title": "2025-11-25-Battery-Plus项目的由来"
+              "icon": "lucide-image",
+              "title": "file-20251124101944491"
             }
           }
         ],
@@ -268,14 +265,15 @@
   },
   "active": "a59edff244de9323",
   "lastOpenFiles": [
+    "assets/2025-11-25-Battery-Plus项目的由来/file-20251125112516403.png",
+    "assets/avatar.png",
+    "_posts/2025-11-25-Battery-Plus项目的由来.md",
     "_posts/2025-11-22-设计思考.md",
     "_posts/2025-11-24-ClaudeCode配API使用.md",
-    "_posts/2025-11-25-Battery-Plus项目的由来.md",
     "_posts/2025-11-23-配置blog.md",
     "_posts/2025-11-22-Test.md",
     "_posts/2025-11-23-构建n8n工作流.md",
     "_posts/2025-11-23-测试cdn.md",
-    "assets/2025-11-25-Battery-Plus项目的由来/file-20251125112516403.png",
     "assets/2025-11-25-Battery-Plus项目的由来",
     "_posts/2025-11-24-榨干Gemini.md",
     "assets/2025-11-23-配置blog/file-20251124111840461.png",
@@ -296,7 +294,6 @@
     "assets/2025-11-24-ClaudeCode配API使用/file-20251124101944491.png",
     "assets/2025-11-24-ClaudeCode配API使用",
     "_posts/().md",
-    "assets/avatar.png",
     "202511/2025-11-22-VFP.md",
     "202511/2025-11-23-配置blog.md",
     "有关vMoc/读完六篇云网络架构Paper，我得到了什么？.md",
