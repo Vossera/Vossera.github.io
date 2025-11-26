@@ -41,15 +41,6 @@ ccr ui
 	每天2000个额度
 2. 配GLM4.5，貌似挺便宜
 3. 配Deepseek
-4. Gemini
-
-
-## 重点是Gemini
-我们接下来会介绍怎么搞这个无限Gemini，Gemini目前可以免费调用3.0 pro，但是额度太少，我们加一个负载均衡就OK。
-
-已经有人干了，https://github.com/snailyp/gemini-balance，
-我们先搞十个谷歌账号
-
 
 
 ## 下面介绍四个claude code常见的命令：
