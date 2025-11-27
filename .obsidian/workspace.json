@@ -65,11 +65,13 @@
               "title": "Search"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "7400426a3acf37a7",
@@ -85,13 +87,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2025-11-26-DDPM和SDE.md",
+                "file": "_posts/2025-11-27-Diffusion再读.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2025-11-26-DDPM和SDE"
+              "title": "Outline of 2025-11-27-Diffusion再读"
             }
           },
           {
@@ -105,36 +107,17 @@
             }
           },
           {
-            "id": "3944f5592fd95835",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "202511/2025-11-17-vSwitch Background.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-coming-in",
-              "title": "Backlinks for 2025-11-17-vSwitch Background"
-            }
-          },
-          {
             "id": "caf28d2baf00a6f3",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "202511/2025-11-17-vSwitch Background.md",
+                "file": "_posts/2025-11-27-Diffusion再读.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 2025-11-17-vSwitch Background"
+              "title": "Outgoing links from 2025-11-27-Diffusion再读"
             }
           },
           {
@@ -151,27 +134,13 @@
               "icon": "lucide-tags",
               "title": "Tags"
             }
-          },
-          {
-            "id": "c082acaddb4fab28",
-            "type": "leaf",
-            "state": {
-              "type": "all-properties",
-              "state": {
-                "sortOrder": "frequency",
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-archive",
-              "title": "All properties"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
