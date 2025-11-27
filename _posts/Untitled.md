@@ -1,1 +1,0 @@
-DDIM是diffusion ODE的一阶离散
