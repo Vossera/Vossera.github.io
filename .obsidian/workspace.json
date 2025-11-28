@@ -65,8 +65,7 @@
               "title": "Search"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -181,7 +180,7 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "3136854891f00262",
+  "active": "c90af22b242e32c3",
   "lastOpenFiles": [
     "assets/2025-11-27-Diffusion再读/file-20251127155320864.png",
     "assets/2025-11-27-Diffusion再读/file-20251127155249539.png",
