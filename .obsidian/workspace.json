@@ -8,21 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "3136854891f00262",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_posts/2025-11-27-Diffusion再读.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "2025-11-27-Diffusion再读"
-            }
-          },
-          {
             "id": "e91e5d981f78276a",
             "type": "leaf",
             "state": {
@@ -37,8 +22,7 @@
               "title": "2025-11-30-牛客 刷题"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -85,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "7400426a3acf37a7",
