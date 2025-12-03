@@ -77,5 +77,23 @@
       ],
       "key": "="
     }
+  ],
+  "editor:insert-codeblock": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "B"
+    }
+  ],
+  "editor:insert-mathblock": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "M"
+    }
   ]
 }
