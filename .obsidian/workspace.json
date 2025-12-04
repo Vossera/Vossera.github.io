@@ -11,10 +11,15 @@
             "id": "06bd8dfd1bf922ad",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "_posts/2025-12-02-牛客刷题.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "2025-12-02-牛客刷题"
             }
           }
         ]
@@ -177,8 +182,8 @@
   },
   "active": "06bd8dfd1bf922ad",
   "lastOpenFiles": [
-    "_posts/2025-12-04-vscode配置自动include.md",
     "_posts/2025-12-03-gitignore不生效的办法.md",
+    "_posts/2025-12-04-vscode配置自动include.md",
     "assets/2025-12-04-vscode配置自动include/file-20251204112237416.png",
     "assets/2025-12-04-vscode配置自动include",
     "_posts/2025-11-30-牛客 刷题.md",
