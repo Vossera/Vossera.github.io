@@ -4,20 +4,41 @@
     "type": "split",
     "children": [
       {
-        "id": "3b94cd4dd07881bc",
+        "id": "16c13704ea52e988",
         "type": "tabs",
         "children": [
           {
-            "id": "000b681e1e499889",
+            "id": "710cbc1fa063ae28",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "_posts/2025-12-03-gitignore不生效的办法.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "2025-12-03-gitignore不生效的办法"
+            }
+          },
+          {
+            "id": "3c38d4f585f2cc05",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_posts/Untitled.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Untitled"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -31,7 +52,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "c90af22b242e32c3",
+            "id": "14ed203279c7065c",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -44,7 +65,7 @@
             }
           },
           {
-            "id": "2a388f9caed3fba9",
+            "id": "172ebdddb5bd87d8",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -58,6 +79,16 @@
               },
               "icon": "lucide-search",
               "title": "Search"
+            }
+          },
+          {
+            "id": "fc20af927ffe3c3c",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
         ]
@@ -75,21 +106,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "777e7d0ec92fcaee",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "_posts/2025-11-27-Diffusion再读.md",
-                "followCursor": false,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-list",
-              "title": "Outline of 2025-11-27-Diffusion再读"
-            }
-          },
-          {
             "id": "3c474efa3411785a",
             "type": "leaf",
             "state": {
@@ -100,21 +116,35 @@
             }
           },
           {
-            "id": "caf28d2baf00a6f3",
+            "id": "0bea89a1d8ed92a4",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "202512/2025-12-06-牛客.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of 2025-12-06-牛客"
+            }
+          },
+          {
+            "id": "bfff1215f717c2ca",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2025-11-27-Diffusion再读.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 2025-11-27-Diffusion再读"
+              "title": "Outgoing links"
             }
           },
           {
-            "id": "94ad130abdb6afc1",
+            "id": "0cecdda14a46d7b4",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -127,41 +157,9 @@
               "icon": "lucide-tags",
               "title": "Tags"
             }
-          },
-          {
-            "id": "d8913df6d2197ed2",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "_posts/2025-11-27-Diffusion再读.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-coming-in",
-              "title": "Backlinks for 2025-11-27-Diffusion再读"
-            }
-          },
-          {
-            "id": "2f0806686942ce2f",
-            "type": "leaf",
-            "state": {
-              "type": "all-properties",
-              "state": {
-                "sortOrder": "frequency",
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-archive",
-              "title": "All properties"
-            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -171,57 +169,61 @@
   "left-ribbon": {
     "hiddenItems": {
       "obsidian-git:Open Git source control": true,
+      "canvas:Create new canvas": true,
       "templates:Insert template": true,
+      "command-palette:Open command palette": true,
+      "bases:Create new base": true,
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "c90af22b242e32c3",
+  "active": "3c38d4f585f2cc05",
   "lastOpenFiles": [
-    "_posts/2025-12-06-牛客.md",
-    "_posts/2025-12-04-vscode配置自动include.md",
-    "_posts/2025-12-02-牛客刷题.md",
     "_posts/2025-12-03-gitignore不生效的办法.md",
-    "assets/2025-12-04-vscode配置自动include/file-20251204112237416.png",
-    "assets/2025-12-04-vscode配置自动include",
-    "_posts/2025-11-30-牛客 刷题.md",
-    "README.md",
-    "_posts/稿子.md",
-    "assets/2025-12-02-牛客刷题/file-20251202174610439.png",
-    "assets/2025-12-02-牛客刷题",
-    "_posts/2025-11-26-DDPM和SDE.md",
-    "_posts/2025-11-27-Diffusion再读.md",
-    "assets/2025-11-27-Diffusion再读/file-20251127155320864.png",
-    "assets/2025-11-27-Diffusion再读/file-20251127155249539.png",
-    "assets/2025-11-27-Diffusion再读/file-20251127154005884.png",
-    "assets/2025-11-27-Diffusion再读",
-    "_posts/2025-11-26-DDPM加噪过程.md",
-    "_posts/2025-11-23-配置blog.md",
-    "_posts/2025-11-24-ClaudeCode配API使用.md",
-    "_posts/2025-11-25-Battery-Plus项目的由来.md",
-    "_posts/2025-11-22-设计思考.md",
-    "assets/2025-11-24-ClaudeCode配API使用/file-20251124101944491.png",
-    "assets/2025-11-25-Battery-Plus项目的由来/file-20251125112516403.png",
-    "assets/avatar.png",
-    "_posts/2025-11-22-Test.md",
-    "_posts/2025-11-23-构建n8n工作流.md",
-    "_posts/2025-11-23-测试cdn.md",
-    "assets/2025-11-25-Battery-Plus项目的由来",
-    "_posts/2025-11-24-榨干Gemini.md",
-    "assets/2025-11-23-配置blog/file-20251124111840461.png",
-    "_site/posts/榨干Gemini/index.html",
-    "_site/posts/榨干Gemini",
-    "_site/posts/ClaudeCode配API使用/index.html",
-    "_site/posts/ClaudeCode配API使用",
-    "_site/posts/构建n8n工作流/index.html",
-    "_site/posts/构建n8n工作流",
-    "_site/assets/2025-11-24-ClaudeCode配API使用/file-20251124101944491.png",
-    "_posts/().md",
+    "_posts/Untitled.md",
+    "Untitled.md",
+    "202512/2025-12-08-Agentic LLM-Policy Gradient.md",
+    "202512/2025-12-06-牛客.md",
+    "202512/TODO.md",
+    "202512/assets/2025-12-08-Agentic LLM-Policy Gradient",
+    "202512/assets/2025-12-08-Agentic LLM-Policy Gradient/file-20251208220114504.png",
+    "202512/2025-12-04-阅读Elixir.md",
+    "202512/assets/2025-12-08-Agentic LLM-Policy Gradient/file-20251208220114506.png",
+    "202512/assets/2025-12-08-Agentic LLM",
+    "有关Helix/2025-12-04-开会.md",
+    "有关Helix/Helix细节.md",
+    "202512/2025-12-04-tariif.md",
+    "202512/assets/2025-12-04-tariif/file-20251204204238061.svg",
+    "202512/assets/2025-12-04-tariif",
+    "202512/assets",
+    "202512",
+    "202511/TODO.md",
+    "202511/2025-11-26-diffusion学习.md",
+    "202511/2025-11-21-高性能网络架构师笔记学习.md",
     "202511/2025-11-22-VFP.md",
-    "202511/2025-11-23-配置blog.md",
-    "有关vMoc/读完六篇云网络架构Paper，我得到了什么？.md",
+    "模版.md",
+    "202511/2025-11-25-论文阅读.md",
+    "有关Helix/1126开会总结.md",
+    "有关Helix/2025-12-02.md",
     "有关vMoc/2025-11-22自己的总结.md",
+    "有关Helix/assets/1126开会总结/file-20251126200627423.png",
+    "有关vMoc/2025-12-01-vMoc开会.md",
+    "有关Helix/1119总结Helix 总结 backup.md",
+    "有关Helix/assets/1126开会总结/file-20251126200041602.png",
+    "有关vMoc/2025-11-27 开会记录.md",
+    "有关Helix/1119总结Helix 需要确认版.md",
+    "有关Helix/1119总结Helix 总结.md",
+    "有关vMoc/读完六篇云网络架构Paper，我得到了什么？.md",
     "有关vMoc/云网络深海探险：从vSwitch到DPU的演进与未来.md",
-    "有关vMoc/2025-11-18-vSwitch Insight and Summary.md",
-    "有关vMoc/2025-11-22-EvolutionofCloud.md"
+    "有关Helix/assets/1126开会总结/file-20251126195307905.png",
+    "有关Helix/assets/1126开会总结/file-20251126190237548.png",
+    "Untitled.canvas",
+    "Untitled.base",
+    "有关Helix/assets/1126开会总结/file-20251126183137539.png",
+    "有关Helix/assets/1126开会总结",
+    "202511/assets/2025-11-26-diffusion学习/file-20251126094008157.png",
+    "202511/assets/2025-11-26-diffusion学习/file-20251126093922370.png",
+    "202511/assets/2025-11-26-diffusion学习",
+    "202511/assets/2025-11-25-论文阅读",
+    "202511/assets/2025-11-23-配置blog"
   ]
 }

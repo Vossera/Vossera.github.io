@@ -1,0 +1,19 @@
+{
+  "activeProfile": {
+    "name": "All",
+    "modifiedAt": "2025-12-09T03:24:30.462Z"
+  },
+  "profileUpdate": true,
+  "profileUpdateDelay": 800,
+  "uiUpdate": true,
+  "uiUpdateInterval": 1000,
+  "devices": {
+    "46381930733683e999c7b00d033886b1a6a68de35665e68aa15ab0ec5b35c139": "/Users/sihan/Library/Application Support/ObsidianPlugins/Profiles"
+  },
+  "statusbarInteraction": {
+    "click": "auto",
+    "ctrl_click": "none",
+    "shift_click": "none",
+    "alt_click": "none"
+  }
+}
