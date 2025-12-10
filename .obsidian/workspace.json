@@ -28,13 +28,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/Untitled.md",
+                "file": "_posts/2025-12-10-vscode远程服务器配置c++.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Untitled"
+              "title": "2025-12-10-vscode远程服务器配置c++"
             }
           }
         ],
@@ -178,8 +178,14 @@
   },
   "active": "3c38d4f585f2cc05",
   "lastOpenFiles": [
+    "_posts/assets/2025-12-10-vscode远程服务器配置c++/file-20251210203356149.png",
+    "_posts/assets/2025-12-10-vscode远程服务器配置c++/file-20251210203351308.png",
+    "_posts/assets/2025-12-10-vscode远程服务器配置c++/file-20251210203320455.png",
+    "_posts/assets/2025-12-10-vscode远程服务器配置c++/file-20251210203242391.png",
+    "_posts/assets/2025-12-10-vscode远程服务器配置c++",
+    "_posts/assets",
     "_posts/2025-12-03-gitignore不生效的办法.md",
-    "_posts/Untitled.md",
+    "_posts/2025-12-10-vscode远程服务器配置c++.md",
     "Untitled.md",
     "202512/2025-12-08-Agentic LLM-Policy Gradient.md",
     "202512/2025-12-06-牛客.md",
@@ -213,17 +219,11 @@
     "有关Helix/1119总结Helix 需要确认版.md",
     "有关Helix/1119总结Helix 总结.md",
     "有关vMoc/读完六篇云网络架构Paper，我得到了什么？.md",
-    "有关vMoc/云网络深海探险：从vSwitch到DPU的演进与未来.md",
     "有关Helix/assets/1126开会总结/file-20251126195307905.png",
     "有关Helix/assets/1126开会总结/file-20251126190237548.png",
     "Untitled.canvas",
     "Untitled.base",
-    "有关Helix/assets/1126开会总结/file-20251126183137539.png",
     "有关Helix/assets/1126开会总结",
-    "202511/assets/2025-11-26-diffusion学习/file-20251126094008157.png",
-    "202511/assets/2025-11-26-diffusion学习/file-20251126093922370.png",
-    "202511/assets/2025-11-26-diffusion学习",
-    "202511/assets/2025-11-25-论文阅读",
-    "202511/assets/2025-11-23-配置blog"
+    "202511/assets/2025-11-26-diffusion学习"
   ]
 }
