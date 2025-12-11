@@ -11,10 +11,15 @@
             "id": "8f66b2e1c0db7f51",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "_posts/2025-12-10-vscode远程服务器配置c++以及CUDA debug.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "2025-12-10-vscode远程服务器配置c++以及CUDA debug"
             }
           }
         ]
@@ -157,6 +162,7 @@
   },
   "active": "8f66b2e1c0db7f51",
   "lastOpenFiles": [
+    "Untitled.md",
     "_posts/2025-12-03-gitignore不生效的办法.md",
     "_posts/2025-12-10-vscode远程服务器配置c++以及CUDA debug.md",
     "_posts/assets/2025-12-10-vscode远程服务器配置c++以及CUDA debug",
@@ -166,7 +172,6 @@
     "_posts/assets/2025-12-10-vscode远程服务器配置c++以及CUDA debug/file-20251211090908012.png",
     "_posts/assets/2025-12-10-vscode远程服务器配置c++",
     "_posts/assets",
-    "Untitled.md",
     "202512/2025-12-08-Agentic LLM-Policy Gradient.md",
     "202512/2025-12-06-牛客.md",
     "202512/TODO.md",

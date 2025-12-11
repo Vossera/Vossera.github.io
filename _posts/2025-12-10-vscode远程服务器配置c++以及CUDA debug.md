@@ -24,3 +24,62 @@ https://docs.nvidia.com/nsight-visual-studio-code-edition/latest/cuda-debugger/i
 以及make dbg=1。这个是加在build.sh里面（也可以自己执行）
 "type": "cuda-gdb",（这个在launch.json里面）
 ```
+
+
+## 注意c++代码的调试和CUDA的调试要分开，因为这是两个gdb
+
+参考下面的launch.json
+
+```json
+{
+
+// Use IntelliSense to learn about possible attributes.
+
+// Hover to view descriptions of existing attributes.
+
+// For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+
+"version": "0.2.0",
+
+"configurations": [
+
+  
+
+{
+
+"name": "CUDA C++: Launch",
+
+"type": "cuda-gdb",
+
+"request": "launch",
+
+"program": "${workspaceFolder}/data/meshDistGPU",
+
+"args": ["${workspaceFolder}/data/my-bunny.obj", "${workspaceFolder}/data/alien-animal.obj"],
+
+"preLaunchTask": "Build CUDA C++: Launch"
+
+},
+
+{
+
+"name": "C++: Launch",
+
+"type": "cppdbg",
+
+"request": "launch",
+
+"cwd": ".",
+
+"program": "${workspaceFolder}/data/meshDistGPU",
+
+"args": ["${workspaceFolder}/data/my-bunny.obj", "${workspaceFolder}/data/alien-animal.obj"],
+
+"preLaunchTask": "Build CUDA C++: Launch"
+
+},
+
+]
+
+}
+```
