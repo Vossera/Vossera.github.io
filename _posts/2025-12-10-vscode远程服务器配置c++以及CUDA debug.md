@@ -10,6 +10,9 @@ vscode连接服务器c++总是抽风，没有intelli sense或者语法高亮。
 这里不能disable了
 ## 3. 
 ![](assets/2025-12-10-vscode远程服务器配置c++以及CUDA%20debug/file-20251211090908011.png)
+## 4. 
+![](assets/2025-12-10-vscode远程服务器配置c++以及CUDA%20debug/file-20251211105439996.png)
+这里不能是tag parser，否则不提示变量名
 这里不能是gcc,因为我们写的是c++代码而非c代码.
 
 
