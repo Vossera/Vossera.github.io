@@ -10,4 +10,5 @@ cp -r /tmp/_site/* ./
 git add -A
 git commit -m "Update site content $(date +%Y-%m-%d %H:%M:%S)"
 git push origin gh-pages
+git checkout local-build
 rm -rf /tmp/_site
