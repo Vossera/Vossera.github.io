@@ -11,10 +11,14 @@
             "id": "264743695dee6fd1",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "_posts/2026-01-10-diffusion guide.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "2026-01-10-diffusion guide"
             }
           }
         ]
@@ -74,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "a1f0e5bdca81141b",
@@ -90,6 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "_posts/2026-01-10-diffusion guide.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,7 +105,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for 2026-01-10-diffusion guide"
             }
           },
           {
@@ -150,15 +156,17 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "_posts/2026-01-10-diffusion guide.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of 2026-01-10-diffusion guide"
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -176,17 +184,29 @@
       "bases:Create new base": false
     }
   },
-  "active": "3ad7ce5cd7e34a36",
+  "active": "264743695dee6fd1",
   "lastOpenFiles": [
+    "_site/Lazy.html",
+    "_posts/2026-01-10-Lazy.md",
+    "_site/Lazy.,d",
+    "_posts/2026-01-10-Lazy.,d",
+    "_posts/2026-01-10-Lazy",
+    "_site/assets/img/moments/hat.jpeg",
+    "assets/img/moments/hat.jpeg",
+    "_site/assets/img/moments/34870F95-F114-40C8-8D2E-37BBA469BAB6_4_5005_c.jpeg",
+    "assets/img/moments/34870F95-F114-40C8-8D2E-37BBA469BAB6_4_5005_c.jpeg",
+    "_site/assets/img/moments/sky.jpeg",
+    "assets/img/moments/sky.jpeg",
+    "_site/assets/img/moments/sea1.jpeg",
+    "assets/img/moments/sea1.jpeg",
+    "_site/assets/img/moments/913AD58F-B051-478E-B56B-5457FA0B988D_4_5005_c.jpeg",
+    "assets/img/moments/913AD58F-B051-478E-B56B-5457FA0B988D_4_5005_c.jpeg",
+    "_sass/_moments.scss",
+    "_includes/moment-item.html",
+    "_posts/simple_diffusion_two_moons.ipynb",
     "_sass/_variables.scss",
     "_plugins/jekyll-scholar-fix.rb",
     "_plugins",
-    "_site/Guide-of-Diffusion.html",
-    "_includes/image.html",
-    "_layouts/image.html",
-    "_layouts/imgae.html",
-    "_layouts/imga.html",
-    "_bibliography/diffusion_practical_guide.bib",
-    "_bibliography"
+    "_site/Guide-of-Diffusion.html"
   ]
 }

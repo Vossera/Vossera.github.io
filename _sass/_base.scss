@@ -5,7 +5,7 @@
 */
 
 body {
-  font-family: $serif-font-family;
+  font-family: $sans-serif-font-family;
   font-size: 18px;
   color: $body-color;
   line-height: 1.85rem;
@@ -30,7 +30,7 @@ h1 a {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $serif-font-family;
+  font-family: $sans-serif-font-family;
   color: $dark-gray-color;
   font-weight: 600;
   margin-top: 1.5rem;
@@ -42,7 +42,7 @@ p {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: underline;
   color: $dark-gray-color;
 }
 
