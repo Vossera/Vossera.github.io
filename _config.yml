@@ -29,6 +29,8 @@ title:		           'Sihan Fu'
 description:	       'Life finds a way.'
 author:              '付思瀚'
 
+url: "https://vossera.github.io" # the base hostname & protocol for your site
+
 scholar:
   style: "assets/acm-siggraph.csl"
 # RSS 2.0 can be used instead of Atom by uncommenting following two lines
