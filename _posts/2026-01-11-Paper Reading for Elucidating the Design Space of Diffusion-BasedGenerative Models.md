@@ -8,7 +8,7 @@ tags: [blog]
 
 The orginal paper can be found here.
 {% cite karras2022elucidating --file design_space %}.
-
+https://www.youtube.com/watch?v=T0Qxzf0eaio
 
 作者建立了一个简洁的数学框架，将所有扩散模型都看作是在解一个**常微分方程（ODE）** 。
 
@@ -41,3 +41,8 @@ The orginal paper can be found here.
 
 
 这篇论文的一个重要发现是：如果你想让生成路径最简单、最直观（走直线），最好的选择是令 **$s(t) = 1$**（不缩放）并且 **$\sigma(t) = t$**（噪声随时间线性增加）
+
+
+### S
+扩散模型最初是建立在 SDE 基础上的，因为它模拟的是加入随机噪声的过程。
+Song 等人证明了，对于每一个 SDE，都存在一个对应的“概率流 ODE”
