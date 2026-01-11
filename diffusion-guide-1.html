@@ -1,0 +1,340 @@
+<!doctype html>
+<html>
+  <head>
+  <title>
+    
+      Math of Diffusion | Sihan Fu
+    
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/syntax.css">
+  <!-- Use Atom -->
+  <link type="application/atom+xml" rel="alternate" href="/feed.xml" title="Sihan Fu" />
+  <!-- Use RSS-2.0 -->
+  <!--<link href="/rss-feed.xml" type="application/rss+xml" rel="alternate" title="Sihan Fu | Life finds a way."/>
+  //-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quattrocento+Sans">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+    MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
+        }
+      });
+  </script>
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', '', 'auto');
+  ga('send', 'pageview');
+</script>
+
+  <!-- Use Jekyll SEO plugin -->
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Math of Diffusion | Sihan Fu</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="Math of Diffusion" />
+<meta name="author" content="Sihan Fu" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="This blog is written as a subplementary for [Elflein 2022], which I think is an excellent material for diffusion learning." />
+<meta property="og:description" content="This blog is written as a subplementary for [Elflein 2022], which I think is an excellent material for diffusion learning." />
+<meta property="og:site_name" content="Sihan Fu" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2026-01-10T00:00:00+08:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Math of Diffusion" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Sihan Fu"},"dateModified":"2026-01-10T00:00:00+08:00","datePublished":"2026-01-10T00:00:00+08:00","description":"This blog is written as a subplementary for [Elflein 2022], which I think is an excellent material for diffusion learning.","headline":"Math of Diffusion","mainEntityOfPage":{"@type":"WebPage","@id":"/diffusion-guide-1"},"url":"/diffusion-guide-1"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+  <h3 class="header-title">
+    <a href="/">Sihan Fu</a>
+    <small class="header-subtitle">Life finds a way.</small>
+    <div class="menu">
+  <nav class="menu-content">
+    
+      <a href="/">About</a>
+    
+      <a href="/blogs.html">Blogs</a>
+    
+      <a href="/jottings.html">Jottings</a>
+    
+      <a href="/moments.html">Moments</a>
+    
+      <a href="/resume.html">Resume</a>
+    
+  </nav>
+  <nav class="social-icons">
+    
+  
+  
+    <a href="https://www.github.com/vossera" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+  
+
+  
+  
+    <a href="mailto:galaxygit88@gmail.com" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+  
+
+  </nav>
+</div>
+
+  </h3>
+</header>
+
+      <div class="content-container">
+        <h1>
+  Math of Diffusion
+</h1>
+
+<article>
+  <p><strong>This blog is written as a subplementary for <a class="citation" href="#elflein2022practical">[Elflein 2022]</a>, which I think is an excellent material for diffusion learning.</strong></p>
+
+<h2 id="diffusion">Diffusion</h2>
+
+<p>Diffusion models define a forward and backward process:</p>
+
+<ul>
+  <li>the forward process gradually adds noise to the data until the original data is indistinguishable (one arrives at a standard normal distribution $N(0, \mathbf{I})$)</li>
+  <li>the backward process aims to reverse the forward process, i.e., start from noise and then gradually tries to restore data</li>
+</ul>
+
+<figure class="image" style="padding: 0 0.5em 0 0.5em;">
+    <img src="/assets/img/diffusion_practical_guide_files/forward&amp;backward.png" alt="Figure 1: Forward and Backward Process of Diffusion." width="" class="centerimg" />
+    <figcaption style="text-align: center;">
+        Figure 1: Forward and Backward Process of Diffusion.
+    </figcaption>
+</figure>
+
+<p>To generate new samples by starting from random noise, one aims to learn the backward process.</p>
+
+<p>To be able to start training a model that learns this backward process, we first need to know how to do the forward process.</p>
+
+<h2 id="forward">Forward</h2>
+
+<p>The forward process adds noise at every step $t$ controlled by parameters \(\{\alpha_t\}_{t=1, \dots, T}, \alpha_{t-1} &gt; \alpha_t, \alpha_T = 0\):</p>
+
+\[\begin{equation}
+q(x_t \mid x_{t-1}) \sim \mathcal{N}(\sqrt{\alpha_t}x_{t-1}, (1-\alpha_t)\mathbf{I})
+\end{equation}\]
+
+<p>As \(t \rightarrow T\) this distribution becomes a multi-variate Gaussian distribution \(\mathcal{N}(0, \mathbf{I})\).</p>
+
+<p>So why do we include a $\alpha$ here? Why can’t we just add standard noise every single time? Wouldn’t that make things simpler? No. Intuitively, think about it this way: when you add noise to a clean image, even a small amount initially has a visible blurring effect. However, as the image becomes increasingly noisy, you have to add significantly more noise to make any perceptible difference. From a mathematical perspective, the denoising process requires this specific noise intensity (schedule) to ensure the distance function remains differentiable. For more specific details, you can refer to <a class="citation" href="#yuan2024diffusion">[Yuan 2024]</a>.</p>
+
+<p>The cool thing about this being Gaussian noise is that instead of simulating this forward process by iteratively sampling noise, one can derive a closed form for the distribution at a certain $t$ given the original data point $x_0$ so one has to only sample noise once:</p>
+
+\[\begin{equation}
+q(x_t \mid x_0) \sim \mathcal{N}(\sqrt{\bar{\alpha}}_t x_0, (1 - \bar{\alpha}_t)\mathbf{I})
+\end{equation}\]
+
+<p>with $\bar{\alpha}_t = \prod_{s = 1}^t \alpha_s$.</p>
+
+<p>How do we get this formula?</p>
+
+<p>We know that \(x_1 = \sqrt{\alpha_1} x_0 + \sqrt{1 - \alpha_1} \epsilon_0\) and 
+\(x_2 = \sqrt{\alpha_2} x_1 + \sqrt{1 - \alpha_2} \epsilon_1\)</p>
+
+<p>so \(x_2 = \sqrt{\alpha_2} (\sqrt{\alpha_1} x_0 + \sqrt{1 - \alpha_1} \epsilon_0) + \sqrt{1 - \alpha_2} \epsilon_1\)</p>
+
+<p>then 
+\(x_2 = \sqrt{\alpha_1 \alpha_2} x_0 + \sqrt{\alpha_2 (1 - \alpha_1)} \epsilon_0 + \sqrt{1 - \alpha_2} \epsilon_1\)</p>
+
+<p>Note that:</p>
+<ul>
+  <li><strong>Term A:</strong> $\sqrt{\alpha_2 (1 - \alpha_1)} \epsilon_0 \sim \mathcal{N}(0, \alpha_2(1-\alpha_1)\mathbf{I})$</li>
+  <li><strong>Term B:</strong> $\sqrt{1 - \alpha_2} \epsilon_1 \sim \mathcal{N}(0, (1-\alpha_2)\mathbf{I})$</li>
+</ul>
+
+<p>Since $\epsilon_0$ and $\epsilon_1$ are <strong>independent</strong>, their sum still follows a Gaussian distribution. The total variance is equal to the sum of their individual variances:</p>
+
+\[\sigma^2_{total} = \alpha_2(1-\alpha_1) + (1-\alpha_2)\]
+
+\[\sigma^2_{total} = \alpha_2 - \alpha_1\alpha_2 + 1 - \alpha_2 = 1 - \alpha_1\alpha_2\]
+
+<p>By defining $\bar{\alpha}_2 = \alpha_1 \alpha_2$, we can merge these two noise terms into a single new standard Gaussian noise $\bar{\epsilon}_2$:</p>
+
+\[x_2 = \sqrt{\bar{\alpha}_2} x_0 + \sqrt{1 - \bar{\alpha}_2} \bar{\epsilon}_2\]
+
+<p>Hope you get some insight to calculate $x_n$.</p>
+
+<h2 id="training">Training</h2>
+<p>Next, we want to train a model that reverses that process.</p>
+
+<p>For this, one can show that the there is also a closed form for the less noisy version $x_{t-1}$ given the next sample $x_t$ and the original sample $x_0$.</p>
+
+\[\begin{equation}
+q(x_{t-1} \mid x_t, x_0) = \mathcal{N}(\mu(x_t, x_0), \sigma_t^2\mathbf{I})
+\end{equation}\]
+
+<p>where</p>
+
+\[\begin{equation}
+\sigma_t^2 = \frac{(1 - \alpha_t)(1 - \bar{\alpha}_{t-1})}{1 - \bar{\alpha}_t}, \quad \mu(x_t, x_0) = \frac{1}{\sqrt{\alpha_t}} \left(x_t - \frac{1 - \alpha_t}{\sqrt{1 - \bar{\alpha}_t}} \epsilon_0\right)
+\end{equation}\]
+
+<p>and $\epsilon_0 \sim \mathcal{N}(0, \mathbf{I})$ is the noise drawn to perturb the original data $x_0$.</p>
+
+<p>Why? Please don’t be overwhelmed by the following.
+Based on Bayes’ rule, we can express $q(x_{t-1} | x_t, x_0)$ as:</p>
+
+\[q(x_{t-1} | x_t, x_0) = q(x_t | x_{t-1}, x_0) \frac{q(x_{t-1} | x_0)}{q(x_t | x_0)}\]
+
+<p>Since the diffusion process is a Markov chain, once $x_{t-1}$ is given, the distribution of $x_t$ becomes independent of $x_0$. 
+Therefore, \(q(x_t | x_{t-1}, x_0) = q(x_t | x_{t-1})\). The formula simplifies to:</p>
+
+\[q(x_{t-1} | x_t, x_0) = q(x_t | x_{t-1}) \frac{q(x_{t-1} | x_0)}{q(x_t | x_0)}\]
+
+<p>During the forward process, we have already defined or derived the three terms on the right-hand side:</p>
+
+<ul>
+  <li>
+    <p><strong>Single-step forward:</strong>
+\(q(x_t | x_{t-1}) = \mathcal{N}(x_t; \sqrt{\alpha_t} x_{t-1}, (1-\alpha_t) \mathbf{I})\)</p>
+  </li>
+  <li>
+    <p><strong>Direct mapping to $t-1$:</strong>
+\(q(x_{t-1} | x_0) = \mathcal{N}(x_{t-1}; \sqrt{\bar{\alpha}_{t-1}} x_0, (1-\bar{\alpha}_{t-1}) \mathbf{I})\)</p>
+  </li>
+  <li>
+    <p><strong>Direct mapping to $t$:</strong>
+\(q(x_t | x_0) = \mathcal{N}(x_t; \sqrt{\bar{\alpha}_t} x_0, (1-\bar{\alpha}_t) \mathbf{I})\)</p>
+  </li>
+</ul>
+
+<p>Since the product or division of Gaussian distributions remains Gaussian, we only need to focus on the terms inside the exponential $\exp(-\frac{1}{2}(\dots))$.</p>
+
+<p>Substituting the three distributions above into Bayes’ rule, the exponential part (ignoring the $-1/2$ factor) expands to:</p>
+
+\[\frac{(x_t - \sqrt{\alpha_t} x_{t-1})^2}{1-\alpha_t} + \frac{(x_{t-1} - \sqrt{\bar{\alpha}_{t-1}} x_0)^2}{1-\bar{\alpha}_{t-1}} - \frac{(x_t - \sqrt{\bar{\alpha}_t} x_0)^2}{1-\bar{\alpha}_t}\]
+
+<p>Because we are solving for the distribution of $x_{t-1}$, we need to rearrange this expression into the standard form $\frac{(x_{t-1} - \mu)^2}{\sigma^2}$ by completing the square.</p>
+
+<h3 id="extracting-the-variance-sigma_t2">Extracting the Variance $\sigma_t^2$</h3>
+
+<p>By isolating all terms involving $x_{t-1}^2$, the coefficient is:</p>
+
+\[\frac{\alpha_t}{1-\alpha_t} + \frac{1}{1-\bar{\alpha}_{t-1}} = \frac{\alpha_t(1-\bar{\alpha}_{t-1}) + 1 - \alpha_t}{(1-\alpha_t)(1-\bar{\alpha}_{t-1})} = \frac{1 - \bar{\alpha}_t}{(1-\alpha_t)(1-\bar{\alpha}_{t-1})}\]
+
+<p>Taking the reciprocal of this coefficient gives us the variance formula:</p>
+
+\[\sigma_t^2 = \frac{(1-\alpha_t)(1-\bar{\alpha}_{t-1})}{1-\bar{\alpha}_t}\]
+
+<h3 id="extracting-the-mean-mux_t-x_0">Extracting the Mean $\mu(x_t, x_0)$</h3>
+
+<p>Similarly, by extracting and simplifying all terms containing $x_{t-1}$, we obtain:</p>
+
+\[\mu(x_t, x_0) = \frac{\sqrt{\alpha_t}(1-\bar{\alpha}_{t-1})}{1-\bar{\alpha}_t} x_t + \frac{\sqrt{\bar{\alpha}_{t-1}}(1-\alpha_t)}{1-\bar{\alpha}_t} x_0\]
+
+<h3 id="introducing-epsilon_0-for-reparameterization">Introducing $\epsilon_0$ for Reparameterization</h3>
+
+<p>This is the final and most ingenious step. To enable the model to predict only the noise $\epsilon$, we utilize the forward process formula:</p>
+
+\[x_t = \sqrt{\bar{\alpha}_t} x_0 + \sqrt{1-\bar{\alpha}_t} \epsilon_0 \implies x_0 = \frac{1}{\sqrt{\bar{\alpha}_t}}(x_t - \sqrt{1-\bar{\alpha}_t} \epsilon_0)\]
+
+<p>Substituting this expression for $x_0$ into the mean formula $\mu$ and performing some algebraic simplification (using the identity \(\bar{\alpha}_t = \alpha_t \bar{\alpha}_{t-1}\)), we arrive at the final form:</p>
+
+\[\mu(x_t, x_0) = \frac{1}{\sqrt{\alpha_t}} \left( x_t - \frac{1-\alpha_t}{\sqrt{1-\bar{\alpha}_t}} \epsilon_0 \right)\]
+
+<h2 id="inference">Inference</h2>
+<p>After training the model to predict the noise $\epsilon$, we can simply iteratively run the backward process to predict $\mathbf{x}_{t-1}$ from $x_t$ starting from random noise $\mathbf{x}_T \sim \mathcal{N}(0, \mathbf{I})$.</p>
+
+\[\begin{equation}
+\mu(x_t) = \frac{1}{\sqrt{\alpha_t}} \left(x_t - \frac{1 - \alpha_t}{\sqrt{1 - \bar{\alpha}_t}} \epsilon_{\mathbf{\theta}}(\mathbf{x}_t, t) \right)
+\end{equation}\]
+
+<p>One can see that as $t \rightarrow 0$ more fine-grained structure emerges that guides the sample to the original data manifold. At $t=T$ samples are guided coarsely towards the center as the signal is still very noisy and hard for the network to predict. This is further shown in <a class="citation" href="#luoUnderstandingDiffusionModels2022a">[Luo 2022]</a>.</p>
+
+<p>If you are interested in a more mathematical description with proofs I can highly recommend <a class="citation" href="#luoUnderstandingDiffusionModels2022a">[Luo 2022]</a>.</p>
+
+<h2 id="good-materials">Good Materials</h2>
+<ol class="bibliography"><li><span id="elflein2022practical"><span style="font-variant: small-caps">Elflein, S.</span> 2022. A practical guide to Diffusion models. https://selflein.github.io/diffusion_practical_guide.</span></li>
+<li><span id="yuan2024diffusion"><span style="font-variant: small-caps">Yuan, C.</span> 2024. Diffusion models from scratch. https://chenyang.co/diffusion.html.</span></li>
+<li><span id="luoUnderstandingDiffusionModels2022a"><span style="font-variant: small-caps">Luo, C.</span> 2022. Understanding Diffusion Models: A Unified Perspective. .</span></li></ol>
+
+
+</article>
+
+  <span class="post-date">
+  Written on
+  
+  January
+  10th,
+  2026
+  by
+  
+    Sihan Fu
+  
+</span>
+
+
+
+  <div class="post-date">Feel free to share!</div>
+<div class="sharing-icons">
+  <a href="https://twitter.com/intent/tweet?text=Math of Diffusion&amp;url=/diffusion-guide-1" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=/diffusion-guide-1&amp;title=Math of Diffusion" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+</div>
+
+
+
+  <div class="related">
+  <h1 >You may also enjoy:</h1>
+  
+  <ul class="related-posts">
+    
+      
+        
+          <li>
+            <h3>
+              <a href="/Paper-Reading-for-Elucidating-the-Design-Space-of-Diffusion-BasedGenerative-Models">
+                Elucidating the Design Space of Diffusion
+                <!--<img src="/images/">-->
+                <!--<small>January 11, 2026</small>-->
+              </a>
+            </h3>
+          </li>
+          
+        
+      
+        
+        
+      
+    
+  </ul>
+</div>
+
+
+
+
+      </div>
+      <footer class="footer">
+  
+  
+  
+    <a href="https://www.github.com/vossera" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+  
+
+  
+  
+    <a href="mailto:galaxygit88@gmail.com" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+  
+
+  <div class="footer-description"><a href="/">Sihan Fu | Life finds a way. by 付思瀚</a></div>
+</footer>
+
+    </div>
+  </body>
+</html>

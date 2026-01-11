@@ -1,27 +1,54 @@
----
----
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
 	<channel>
-		<title>{{ site.title | xml_escape }}</title>
-		<description>{% if site.description %}{{ site.description | xml_escape }}{% endif %}</description>
-		<link>{{ site.github.url }}</link>
-		<atom:link href="{{ site.github.url }}/{{ page.path }}" rel="self" type="application/rss+xml" />
-		{% for post in site.posts limit:10 %}
+		<title>Sihan Fu</title>
+		<description>Life finds a way.</description>
+		<link></link>
+		<atom:link href="/rss-feed.xml" rel="self" type="application/rss+xml" />
+		
 			<item>
-				<title>{{ post.title | xml_escape }}</title>
-				{% if post.author %}
-					<dc:creator>{{ post.author | xml_escape }}</dc:creator>
-				{% endif %}
-				{% if post.excerpt %}
-					<description>{{ post.excerpt | xml_escape }}</description>
-				{% else %}
-					<description>{{ post.content | xml_escape }}</description>
-				{% endif %}
-				<pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-				<link>{{ site.url }}{{ post.url }}</link>
-				<guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
+				<title>Elucidating the Design Space of Diffusion</title>
+				
+					<dc:creator>Sihan Fu</dc:creator>
+				
+				
+					<description>&lt;p&gt;The orginal paper can be found here.
+&lt;a class=&quot;citation&quot; href=&quot;#karras2022elucidating&quot;&gt;[Karras et al. 2022]&lt;/a&gt;.
+https://www.youtube.com/watch?v=T0Qxzf0eaio&lt;/p&gt;
+</description>
+				
+				<pubDate>Sun, 11 Jan 2026 00:00:00 +0800</pubDate>
+				<link>/Paper-Reading-for-Elucidating-the-Design-Space-of-Diffusion-BasedGenerative-Models</link>
+				<guid isPermaLink="true">/Paper-Reading-for-Elucidating-the-Design-Space-of-Diffusion-BasedGenerative-Models</guid>
 			</item>
-		{% endfor %}
+		
+			<item>
+				<title>Math of Diffusion</title>
+				
+					<dc:creator>Sihan Fu</dc:creator>
+				
+				
+					<description>&lt;p&gt;&lt;strong&gt;This blog is written as a subplementary for &lt;a class=&quot;citation&quot; href=&quot;#elflein2022practical&quot;&gt;[Elflein 2022]&lt;/a&gt;, which I think is an excellent material for diffusion learning.&lt;/strong&gt;&lt;/p&gt;
+</description>
+				
+				<pubDate>Sat, 10 Jan 2026 00:00:00 +0800</pubDate>
+				<link>/diffusion-guide-1</link>
+				<guid isPermaLink="true">/diffusion-guide-1</guid>
+			</item>
+		
+			<item>
+				<title>Postgraduate Recommendation</title>
+				
+					<dc:creator>Sihan Fu</dc:creator>
+				
+				
+					<description>&lt;p&gt;Selective giveup is likely caused by laziness or overconfidence.&lt;/p&gt;
+</description>
+				
+				<pubDate>Sat, 10 Jan 2026 00:00:00 +0800</pubDate>
+				<link>/Lazy</link>
+				<guid isPermaLink="true">/Lazy</guid>
+			</item>
+		
 	</channel>
 </rss>
