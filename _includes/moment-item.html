@@ -1,0 +1,21 @@
+<div class="moment-item">
+  <figure class="moment-image">
+    <img src="{{ include.url }}" alt="{{ include.description | default: include.text }}" width="{{ include.width | default: '100%' }}">
+    {% if include.text %}
+    <div class="moment-text">
+      <p>{{ include.text }}</p>
+      {% if include.date %}
+      <div class="moment-date">{{ include.date }}</div>
+      {% endif %}
+    </div>
+    {% endif %}
+    {% if include.description and include.text == nil %}
+    <figcaption class="moment-caption">
+      {{ include.description }}
+      {% if include.date %}
+      <div class="moment-date">{{ include.date }}</div>
+      {% endif %}
+    </figcaption>
+    {% endif %}
+  </figure>
+</div>
