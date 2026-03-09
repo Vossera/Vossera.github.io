@@ -6,7 +6,7 @@ categories: journal
 tags: [blog]
 ---
 
-**This blog is written as a subplementary for {% cite elflein2022practical --file diffusion_practical_guide %}, which I think is an excellent material for diffusion learning.**
+**This blog is written as a supplementary for [this practical guide to diffusion models](https://selflein.github.io/diffusion_practical_guide) (Elflein, 2022), which I think is an excellent material for diffusion learning.**
 
 
 
@@ -37,7 +37,7 @@ $$
 
 As $$t \rightarrow T$$ this distribution becomes a multi-variate Gaussian distribution $$ \mathcal{N}(0, \mathbf{I}) $$.
 
-So why do we include a $\alpha$ here? Why can't we just add standard noise every single time? Wouldn't that make things simpler? No. Intuitively, think about it this way: when you add noise to a clean image, even a small amount initially has a visible blurring effect. However, as the image becomes increasingly noisy, you have to add significantly more noise to make any perceptible difference. From a mathematical perspective, the denoising process requires this specific noise intensity (schedule) to ensure the distance function remains differentiable. For more specific details, you can refer to {% cite yuan2024diffusion --file diffusion_practical_guide %}.
+So why do we include a $\alpha$ here? Why can't we just add standard noise every single time? Wouldn't that make things simpler? No. Intuitively, think about it this way: when you add noise to a clean image, even a small amount initially has a visible blurring effect. However, as the image becomes increasingly noisy, you have to add significantly more noise to make any perceptible difference. From a mathematical perspective, the denoising process requires this specific noise intensity (schedule) to ensure the distance function remains differentiable. For more specific details, you can refer to the materials linked above (e.g. Yuan et al., 2024).
 
 
 The cool thing about this being Gaussian noise is that instead of simulating this forward process by iteratively sampling noise, one can derive a closed form for the distribution at a certain $t$ given the original data point $x_0$ so one has to only sample noise once:
@@ -165,12 +165,12 @@ $$
 $$
 
 
-One can see that as $t \rightarrow 0$ more fine-grained structure emerges that guides the sample to the original data manifold. At $t=T$ samples are guided coarsely towards the center as the signal is still very noisy and hard for the network to predict. This is further shown in {% cite luoUnderstandingDiffusionModels2022a --file diffusion_practical_guide %}.
+One can see that as $t \rightarrow 0$ more fine-grained structure emerges that guides the sample to the original data manifold. At $t=T$ samples are guided coarsely towards the center as the signal is still very noisy and hard for the network to predict. This is further shown in Luo et al. (2022).
 
 
-If you are interested in a more mathematical description with proofs I can highly recommend {% cite luoUnderstandingDiffusionModels2022a --file diffusion_practical_guide %}.
+If you are interested in a more mathematical description with proofs I can highly recommend Luo et al. (2022).
 
 
 ## Good Materials
-{% bibliography --file diffusion_practical_guide --cited %}
+See the linked practical guide and the references mentioned in the text above for full citations.
 
