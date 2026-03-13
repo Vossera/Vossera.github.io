@@ -1,5 +1,14 @@
 ---
 ---
 
-@use "variables" as *;
-@use "-sections-dir";
+// GitHub Pages 使用的 Jekyll Sass 版本目前对 `@use` / `@forward` 支持不好，
+// 这里改成兼容性更好的老写法 `@import`。
+@import
+  "variables",
+  "base",
+  "code",
+  "default",
+  "home",
+  "post",
+  "social-icons",
+  "moments";
