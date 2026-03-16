@@ -26,7 +26,7 @@ plugins:
 
 # Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
 title:		           'Sihan Fu'
-description:	       'Life finds a way.'
+description:	       '只识弯弓射大雕'
 author:              '付思瀚'
 
 url: "https://vossera.github.io" # the base hostname & protocol for your site
