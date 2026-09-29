@@ -30,7 +30,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      BUNDLE_APP_CONFIG: ${{ runner.temp }}/bundle-config
+      BUNDLE_APP_CONFIG: /tmp/vossera-bundle-config
     steps:
       - name: Checkout
         uses: actions/checkout@v4
