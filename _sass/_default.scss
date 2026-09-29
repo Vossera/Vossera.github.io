@@ -175,6 +175,98 @@
   border-radius: 20px;
 }
 
+/*
+  Publications shared by About and Resume
+*/
+
+.publication {
+  padding: 1.5rem 0;
+}
+
+.publication + .publication {
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.publication-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 0.75rem;
+  margin: 0 0 0.65rem;
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+
+.publication-venue {
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  background: #edf3f0;
+  color: #35594a;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.publication-status {
+  color: #666;
+}
+
+.publication-title {
+  margin: 0 0 0.5rem;
+  font-size: 1.25rem;
+  line-height: 1.45;
+}
+
+.publication-title a {
+  text-decoration: none;
+}
+
+.publication-title a:hover {
+  text-decoration: underline;
+}
+
+.publication-authors,
+.publication-description {
+  margin: 0 0 0.65rem;
+  line-height: 1.6;
+}
+
+.publication-authors {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.publication-authors strong {
+  color: $dark-gray-color;
+}
+
+.publication-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.publication-links a {
+  color: #35594a;
+  text-underline-offset: 3px;
+}
+
+.publication-title a:focus-visible,
+.publication-links a:focus-visible {
+  outline: 2px solid #35594a;
+  outline-offset: 4px;
+}
+
+.publication-link-arrow {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.publications-compact .publication {
+  padding: 1.1rem 0;
+}
+
 @media (max-width: $container-responsive-width) {
   .about-hero {
     grid-template-columns: 1fr;

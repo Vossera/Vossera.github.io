@@ -1,0 +1,30 @@
+- title: "BootstrapAgent: Distilling Repository Setup into Reusable Agent Knowledge"
+  authors:
+    - Sihan Fu
+    - Oucheng Liu
+    - Shiyuan Wang
+    - Jin Shi
+    - Chengkun Wei
+  venue: NeurIPS 2026
+  status: Accepted
+  description: A multi-agent framework that turns repository setup experience into reusable, verifiable knowledge for coding agents.
+  links:
+    - label: Paper
+      url: https://arxiv.org/abs/2605.15815
+    - label: Code
+      url: https://github.com/Vossera/BootstrapAgent
+
+- title: "Spillway: Orchestrating DPU and Host into a Unified vSwitching Fabric"
+  authors:
+    - Xiaochong Jiang
+    - Dian Fan
+    - Yilong Lv
+    - Naixuan Guan
+    - Qiming Zhao
+    - Sihan Fu
+  et_al: true
+  venue: ACM SIGCOMM 2026
+  description: A hybrid data plane that combines DPU and idle host CPU resources to expand virtual switching capacity.
+  links:
+    - label: Paper
+      url: https://dl.acm.org/doi/10.1145/3789240.3829154
