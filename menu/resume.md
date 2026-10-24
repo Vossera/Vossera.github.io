@@ -15,7 +15,6 @@ permalink: /resume
 **2021–2025**  
 Shandong University  
 Computer Science and Technology  
-Ranking First in GPA  
 **2025–Present**  
 Zhejiang University  
 Computer Science and Technology
