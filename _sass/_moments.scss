@@ -93,6 +93,56 @@
   }
 }
 
+.moments-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+
+  .moment-item {
+    margin: 0.75rem 0 0;
+    min-width: 0;
+  }
+
+  .moment-image img {
+    height: 190px;
+    object-fit: contain;
+    background: #f7f6f3;
+    box-shadow: none;
+  }
+
+  .moment-text {
+    max-width: none;
+    margin: 1rem 0 0;
+    padding: 0;
+  }
+
+  .moment-text p {
+    font-size: 0.95rem;
+    line-height: 1.65;
+    letter-spacing: 0;
+  }
+
+  .moment-date {
+    font-size: 0.75rem;
+    margin-top: 0.75rem;
+  }
+}
+
+@media (max-width: $container-responsive-width) {
+  .moments-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+
+    .moment-image img {
+      height: auto;
+      max-height: 420px;
+      width: auto;
+      max-width: 100%;
+      background: none;
+    }
+  }
+}
+
 @media (max-width: $elements-responsive-width) {
   .moment-item {
     margin: 3rem 0;

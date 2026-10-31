@@ -1,6 +1,6 @@
 <div class="moment-item">
   <figure class="moment-image">
-    <img src="{{ include.url }}" alt="{{ include.description | default: include.text }}" width="{{ include.width | default: '100%' }}">
+    <img src="{{ include.url | relative_url }}" alt="{{ include.description | default: include.text | escape }}" loading="lazy" decoding="async">
     {% if include.text %}
     <div class="moment-text">
       <p>{{ include.text }}</p>
