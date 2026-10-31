@@ -3,6 +3,7 @@
   <article class="publication">
     <p class="publication-meta">
       <span class="publication-venue">{{ paper.venue | escape }}</span>
+      {% if paper.ranking %}<span class="publication-ranking">{{ paper.ranking | escape }}</span>{% endif %}
       {% if paper.status %}<span class="publication-status">{{ paper.status | escape }}</span>{% endif %}
     </p>
     <h3 class="publication-title">

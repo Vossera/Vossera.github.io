@@ -1,7 +1,7 @@
 ---
-layout: page
+layout: redirect
 title: About
 permalink: /about
+redirect_to: /
+sitemap: false
 ---
-
-{% include about-content.html %}

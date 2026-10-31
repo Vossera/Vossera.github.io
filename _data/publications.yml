@@ -6,7 +6,8 @@
     - Jin Shi
     - Chengkun Wei
   venue: NeurIPS 2026
-  status: Accepted
+  ranking: CCF-A
+  status:
   description: A multi-agent framework that turns repository setup experience into reusable, verifiable knowledge for coding agents.
   links:
     - label: Paper
@@ -24,6 +25,7 @@
     - Sihan Fu
   et_al: true
   venue: ACM SIGCOMM 2026
+  ranking: CCF-A
   description: A hybrid data plane that combines DPU and idle host CPU resources to expand virtual switching capacity.
   links:
     - label: Paper

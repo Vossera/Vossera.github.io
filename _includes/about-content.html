@@ -1,15 +1,23 @@
 <section class="about-hero">
   <div class="about-copy">
-    <p class="about-kicker">Sihan Fu</p>
-    <h2>Building thoughtful systems, and living with curiosity.</h2>
+    <div class="about-identity">
+      <h1 class="about-name">Sihan Fu</h1>
+      <p class="about-motto">{{ site.description }}</p>
+    </div>
+    <p class="about-tagline">Building thoughtful systems, and living with curiosity.</p>
     <p>
       I am a PhD student at Zhejiang University, supervised by Chengkun Wei. 
-      My research spans test-time scaling, AI infrastructure and cloud networking. I am drawn to insights that make complex
+      My research spans Agents, AI infrastructure and cloud networking. I am drawn to insights that make complex
       systems useful in practice.
     </p>
+    <div class="profile-contact" aria-label="Contact links">
+      {% for item in site.data.settings.social %}
+      <a href="{{ item.link | escape }}">{% if item.icon == 'envelope' %}Email{% elsif item.icon == 'github' %}GitHub{% else %}{{ item.icon | capitalize }}{% endif %}<span aria-hidden="true"> ↗</span></a>
+      {% endfor %}
+    </div>
   </div>
   <figure class="about-hero-image">
-    <img src="{{ site.github.url }}/assets/img/self.jpg" alt="my self-portrait">
+    <img src="{{ '/assets/img/self.jpg' | relative_url }}" alt="Portrait of Sihan Fu">
   </figure>
 </section>
 

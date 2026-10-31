@@ -115,33 +115,86 @@
 }
 
 /*
-  About page
+  Single-page profile
 */
+
+.profile-page {
+  margin: 0;
+  padding: 4rem 0 1.5rem;
+}
+
+.profile-content {
+  width: min(800px, 88vw);
+}
+
+.profile-footer {
+  width: min(800px, 88vw);
+  margin-top: 3rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  color: #777;
+  font-size: 0.85rem;
+}
 
 .about-hero {
   display: grid;
   grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
   gap: 2.5rem;
   align-items: center;
-  margin-top: 2rem;
+  margin-top: 0;
   margin-bottom: 3.5rem;
 }
 
-.about-copy h2 {
-  margin-top: 0.25rem;
-  margin-bottom: 1.2rem;
+.about-identity {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  margin-bottom: 0.9rem;
+}
+
+.about-name {
+  margin: 0;
+  white-space: nowrap;
   font-family: $serif-font-family;
-  font-size: 2.3rem;
+  font-size: 2.7rem;
   font-weight: 400;
   line-height: 1.2;
 }
 
-.about-kicker {
-  margin-bottom: 0.25rem;
-  color: $light-gray-color;
-  font-size: 0.85rem;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
+.about-motto {
+  margin: 0;
+  color: #777;
+  font-family: $serif-font-family;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+
+.about-tagline {
+  margin-top: 0.25rem;
+  margin-bottom: 1.2rem;
+  font-family: $serif-font-family;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.profile-contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.profile-contact a {
+  color: #35594a;
+  text-underline-offset: 3px;
+}
+
+.profile-contact a:focus-visible {
+  outline: 2px solid #35594a;
+  outline-offset: 4px;
 }
 
 .about-hero-image {
@@ -151,6 +204,7 @@
 .about-hero-image img {
   display: block;
   width: 100%;
+  margin: 0;
   aspect-ratio: 4 / 3;
   object-fit: cover;
   border-radius: 24px;
@@ -166,6 +220,36 @@
 .about-section h2 {
   font-family: $serif-font-family;
   font-weight: 400;
+}
+
+.education-entry {
+  display: grid;
+  grid-template-columns: 145px minmax(0, 1fr);
+  gap: 1.25rem;
+  padding: 0.85rem 0;
+}
+
+.education-entry h3 {
+  margin: 0 0 0.25rem;
+  font-size: 1.1rem;
+}
+
+.education-entry p {
+  margin: 0;
+}
+
+.education-years {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.honors-list {
+  padding-left: 1.2rem;
+}
+
+.honors-list li {
+  padding-left: 0.2rem;
+  margin-bottom: 0.75rem;
 }
 
 .about-section-accent {
@@ -197,13 +281,19 @@
   line-height: 1.4;
 }
 
-.publication-venue {
+.publication-venue,
+.publication-ranking {
   padding: 0.3rem 0.6rem;
   border-radius: 4px;
   background: #edf3f0;
   color: #35594a;
   font-weight: 700;
   letter-spacing: 0.03em;
+}
+
+.publication-ranking {
+  background: #f5efdf;
+  color: #7a5a20;
 }
 
 .publication-status {
@@ -268,14 +358,22 @@
 }
 
 @media (max-width: $container-responsive-width) {
+  .profile-page {
+    padding-top: 2.5rem;
+  }
+
   .about-hero {
     grid-template-columns: 1fr;
     gap: 1.5rem;
-    margin-top: 1.5rem;
+    margin-top: 0;
   }
 
-  .about-copy h2 {
-    font-size: 1.85rem;
+  .about-name {
+    font-size: 2.3rem;
+  }
+
+  .about-tagline {
+    font-size: 1.5rem;
   }
 
   .about-hero-image img {
@@ -284,5 +382,12 @@
 
   .about-section-accent {
     padding: 1.25rem 1.1rem 0.25rem;
+  }
+}
+
+@media (max-width: $elements-responsive-width) {
+  .education-entry {
+    grid-template-columns: 1fr;
+    gap: 0.2rem;
   }
 }
